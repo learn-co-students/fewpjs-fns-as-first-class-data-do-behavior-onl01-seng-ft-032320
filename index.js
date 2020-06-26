@@ -10,18 +10,18 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 function greet(time) {
-	let timeArr = time.split(":")
-	let hour = parseInt(timeArr)
+	// let timeArr = time.split(":")
+	let hour = parseInt(time)
 	if (hour == NaN) {
 		return "Incorrect format"
 	}
-	else if (hour < 12) {
+	  if (hour < 12) {
 		return "Good Morning"
 	} 
-	else if (hour > 17) {
+	  if (hour > 17) {
 		return "Good Evening"
 	}
-	else if (hour >= 12 && hour <= 17) {
+	  if (hour >= 12 && hour <= 17) {
 		return "Good Afternoon"
 	}
 }
