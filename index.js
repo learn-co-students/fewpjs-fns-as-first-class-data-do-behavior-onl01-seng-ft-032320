@@ -11,3 +11,27 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
+
+
+
+function greet(timey){
+  // let time_split = time.split(":")
+  let time_split = parseInt(timey)
+  if(time_split < 12) {
+    return "Good Morning"
+  }
+  if(time_split >= 12 && time_split <= 17 ) {
+    return "Good Afternoon"
+  }
+  if(time_split > 17 ) {
+    return "Good Evening"
+  }
+  // return time_split
+}
+
+function displayMessage(test) {
+  let content = document.getElementById("greeting")
+  content.innerText = test
+
+}
+
