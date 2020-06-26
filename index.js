@@ -28,5 +28,5 @@ function greet(time) {
 
 function displayMessage(string) {
 	document.querySelector("#greeting").innerText = string
-	return
+	
 }
