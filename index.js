@@ -12,7 +12,7 @@ function handleClick(e) {
 function greet(time) {
 	let timeArr = time.split(":")
 	let hour = parseInt(timeArr)
-	if (hour === NaN) {
+	if (hour == NaN) {
 		return "Incorrect format"
 	}
 	else if (hour < 12) {
